@@ -3,8 +3,8 @@
 # tomsom
 # Derived from Sara Edwards' SANS FOR518
 
-# truffleshuffle parses the Mac OS ChunkStoreDatabase 
-# and ChunkStorage file to carve versioned files.  
+# Truffleshuffle is a simple script that parses the Mac OS 
+# ChunkStoreDatabase and ChunkStorage to carve versioned files.
 
 import os
 import sqlite3
