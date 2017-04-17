@@ -3,8 +3,8 @@
 # tomsom
 # Derived from Sara Edwards' SANS FOR518
 
-# truffleshuffle parses the OSX ChunkStoreDatabase 
-# and ChunkStorage file to carve deleted files.  
+# truffleshuffle parses the Mac OS ChunkStoreDatabase 
+# and ChunkStorage file to carve versioned files.  
 
 import os
 import sqlite3
@@ -46,7 +46,9 @@ try:
          file = cs.read(dataLen - 25)
          output.write(file)
          output.close()
+
 except sqlite3.Error as err:
    print("SQLite error - %s" % str(err))
+   exit()
 
 db.close()
